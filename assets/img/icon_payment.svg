@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26">
+  <g id="Group_364" data-name="Group 364" transform="translate(-818 -1660)">
+    <g id="_007-valid" data-name="007-valid" transform="translate(819 1662)">
+      <path id="Path_94" data-name="Path 94" d="M.25,5.979A2.709,2.709,0,0,1,2.938,3.25H20.067a2.709,2.709,0,0,1,2.688,2.729v5.383a.785.785,0,0,1-1.57,0V5.979A1.139,1.139,0,0,0,20.067,4.82H2.938A1.139,1.139,0,0,0,1.82,5.979V15.7a1.139,1.139,0,0,0,1.118,1.159h7.518a.785.785,0,1,1,0,1.57H2.938A2.709,2.709,0,0,1,.25,15.7Z" transform="translate(-0.25 -3.25)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_95" data-name="Path 95" d="M.25,7.035a.785.785,0,0,1,.785-.785H21.971a.785.785,0,0,1,0,1.57H1.035A.785.785,0,0,1,.25,7.035Z" transform="translate(-0.25 -3.11)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_96" data-name="Path 96" d="M2.25,12.035a.785.785,0,0,1,.785-.785H5.129a.785.785,0,0,1,0,1.57H3.035A.785.785,0,0,1,2.25,12.035Z" transform="translate(-0.156 -2.876)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_97" data-name="Path 97" d="M2.25,14.535a.785.785,0,0,1,.785-.785H7.222a.785.785,0,1,1,0,1.57H3.035A.785.785,0,0,1,2.25,14.535Z" transform="translate(-0.156 -2.759)" fill="#fff" fill-rule="evenodd"/>
+      <path id="Path_98" data-name="Path 98" d="M12.25,18.269a6.019,6.019,0,1,1,6.019,6.019A6.019,6.019,0,0,1,12.25,18.269Zm8.668.032a.785.785,0,0,0-1.11-1.11l-1.538,1.538-1.015-1.015a.785.785,0,1,0-1.11,1.11l1.57,1.57a.785.785,0,0,0,1.11,0Z" transform="translate(0.311 -2.829)" fill="#fff" fill-rule="evenodd"/>
+    </g>
+    <rect id="Rectangle_72" data-name="Rectangle 72" width="26" height="26" transform="translate(818 1660)" fill="none"/>
+  </g>
+</svg>

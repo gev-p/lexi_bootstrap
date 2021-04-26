@@ -1,0 +1,17 @@
+<svg id="Group_174" data-name="Group 174" xmlns="http://www.w3.org/2000/svg" width="80.078" height="36.772" viewBox="0 0 80.078 36.772">
+  <g id="Group_346" data-name="Group 346" transform="translate(0 0)">
+    <g id="Group_181" data-name="Group 181">
+      <text id="Made_By" data-name="Made By" transform="translate(0 10)" fill="#fff" font-size="10" font-family="Montserrat-SemiBold, Montserrat" font-weight="600" letter-spacing="0.214em"><tspan x="0" y="0">MADE BY</tspan></text>
+    </g>
+  </g>
+  <g id="Group_348" data-name="Group 348" transform="translate(0 14.166)">
+    <g id="Group_347" data-name="Group 347" transform="translate(0 8.649)">
+      <path id="Path_29" data-name="Path 29" d="M72.447,186.219a5.11,5.11,0,0,1,3.723,1.612l1.244-1.244a6.885,6.885,0,1,0-.073,9.6l-1.277-1.208a5.126,5.126,0,1,1-3.617-8.758Z" transform="translate(-37.821 -184.46)" fill="#fff"/>
+      <path id="Path_30" data-name="Path 30" d="M33.206,194.353l-4.212-9.329H27.059l6.147,13.55,6.147-13.55H37.418Z" transform="translate(-27.059 -184.618)" fill="#fff"/>
+      <path id="Path_31" data-name="Path 31" d="M49.314,197.985h8.9v-1.759H51.073v-4.017h5.46v-1.759h-5.46v-3.665h7.141v-1.759h-8.9Z" transform="translate(-33.28 -184.618)" fill="#fff"/>
+      <path id="Path_32" data-name="Path 32" d="M109.612,184.46a6.887,6.887,0,1,0,6.887,6.887A6.895,6.895,0,0,0,109.612,184.46Zm0,12.014a5.128,5.128,0,1,1,5.128-5.128A5.134,5.134,0,0,1,109.612,196.474Z" transform="translate(-48.211 -184.46)" fill="#fff"/>
+      <path id="Path_33" data-name="Path 33" d="M85.067,186.784h4.747v11.2h1.759v-11.2h4.747v-1.759H85.067Z" transform="translate(-43.275 -184.618)" fill="#fff"/>
+    </g>
+    <path id="Path_34" data-name="Path 34" d="M125.108,183.27l9.438-5.367-9.438-5.449v2.913l4.249,2.536-4.249,2.453Z" transform="translate(-54.468 -172.455)" fill="#ca000f"/>
+  </g>
+</svg>
