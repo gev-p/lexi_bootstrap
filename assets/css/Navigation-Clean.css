@@ -44,10 +44,13 @@
 }
 
 .navbar {
+  max-width: 1920px;
   padding: 24px 0 20px;
   font-family: 'Mardoto';
   color: #fff;
   font-size: 16px;
+  margin: 0 auto;
+  background-color: #20b1e4;
 }
 
 .navbar-brand {

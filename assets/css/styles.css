@@ -14,7 +14,7 @@
   color: #000;
 }
 
-body {
+.home {
   background-image: url(../../assets/img/blue-shape.svg), url(../../assets/img/gray-shape.svg), url(../../assets/img/bottom_bgr.svg);
   background-position: center top, center top, center bottom;
   background-repeat: no-repeat, no-repeat, no-repeat;
@@ -463,5 +463,90 @@ h2 {
 .tab_text li:before {
   content: url(../../assets/img/Ellipse6.svg);
   margin: 0 18px 0 0;
+}
+
+main {
+}
+
+.from img {
+  margin: 0 16px 3px 0;
+}
+
+.origin-lang {
+  display: flex;
+}
+
+.form-container h1 {
+  font-family: Bokonique;
+  font-size: 32px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 1.28px;
+  text-align: center;
+  color: #090909;
+}
+
+.lang-button {
+  width: 210px;
+  padding: 14px 0;
+  border-radius: 34px;
+  border: solid 0.5px #8aa7ae;
+  display: inline-block;
+  font-family: Mardoto;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.63;
+  letter-spacing: normal;
+  text-align: center;
+  color: #686868;
+}
+
+.lang-buttons:last-child {
+  margin: 0;
+}
+
+.field-subheading span {
+  font-family: 'Rondal';
+  font-size: 26px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  text-align: left;
+  color: #20b1e4;
+}
+
+.field-subheading {
+  font-family: 'Mardoto';
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  text-align: left;
+  color: #090909;
+}
+
+.field-subheading {
+  margin: 10px 0 12px;
+}
+
+.type-button {
+  width: 210px;
+  height: 120px;
+  padding: 32px 49px 20px;
+  border-radius: 6px;
+  border: solid 0.5px #8aa7ae;
+  display: grid;
+  font-family: Bokonique;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  text-align: center;
+  color: #686868;
 }
 
