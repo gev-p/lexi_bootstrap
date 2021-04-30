@@ -672,3 +672,20 @@ textarea.form-control {
   height: 180px;
 }
 
+.lang-button:hover {
+  cursor: pointer;
+}
+
+.file-input-label:hover {
+  cursor: pointer;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  border-color: #fff #fff #fff;
+}
+
+.form-control:focus {
+  border-color: #20b1e4;
+  box-shadow: 0 0 0 .2rem rgba(32,177,228,.25);
+}
+
