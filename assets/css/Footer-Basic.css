@@ -79,6 +79,7 @@ section {
 }
 
 .number-circle {
+  flex: 0 0 56px;
   width: 56px;
   height: 56px;
   border-radius: 28px;
@@ -112,5 +113,32 @@ section {
 
 .type-button img {
   margin: 0 auto;
+}
+
+.number-circle__number {
+  font-family: 'Bokonique';
+  font-size: 26px;
+}
+
+.nav-item.upload-tabs__items-file {
+  /*background-color: none;*/
+}
+
+.text-input {
+  width: 670px;
+  height: 180px;
+  /*margin: 12px 0 0;*/
+  /*padding: 22px 396px 139px 22px;*/
+  border-radius: 6px;
+  border: solid 0.5px #8aa7ae;
+  background-color: #ffffff;
+}
+
+.pages {
+  padding: 40px;
+}
+
+label {
+  margin-bottom: 0;
 }
 

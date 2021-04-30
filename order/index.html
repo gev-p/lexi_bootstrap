@@ -21,11 +21,11 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-        <div class="container"><a class="navbar-brand" href="#"><img class="logo" src="../assets/img/logo.png" alt="logo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="#"><img class="logo__img" src="../assets/img/logo.png" alt="logo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">ԳԼԽԱՎՈՐ<br></a></li>
-                    <li class="nav-item"><a class="nav-link active" href="#">ՊԱՏՎԻՐԵԼ<br></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">ԳԼԽԱՎՈՐ<br></a></li>
+                    <li class="nav-item"><a class="nav-link" href="order/index.html">ՊԱՏՎԻՐԵԼ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ՄԵՐ ՄԱՍԻՆ<br></a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ՀԵՏԱԴԱՐՁ ԿԱՊ<br></a></li>
                 </ul>
@@ -35,12 +35,12 @@
     <main>
         <section class="d-flex">
             <div class="form-container">
-                <h1>Պատվիրել թարգմանություն</h1>
+                <h1 class="form-container__heading">Պատվիրել թարգմանություն</h1>
                 <div class="form-divider"></div>
                 <form>
-                    <div class="origin-lang">
+                    <div class="form-block">
                         <div class="d-xl-flex justify-content-xl-center align-items-xl-center number-circle">
-                            <h1>1</h1>
+                            <h2 class="number-circle__number">1</h2>
                         </div>
                         <div>
                             <div>
@@ -48,53 +48,45 @@
                                     <div>
                                         <h5 class="field-subheading">Օրիգինալ Լեզու&nbsp;<span>from</span></h5>
                                     </div>
-                                    <div class="lang-buttons"><label class="lang-button"><img src="../assets/img/flag_am.png">Հայերեն<input type="radio" class="radio-input"></label><label class="lang-button middle"><img src="../assets/img/flag_gb.png">Անգլերեն<input type="radio" class="radio-input"></label><label class="lang-button"><img src="../assets/img/flag_ru.png">Ռուսերեն<input type="radio" class="radio-input"></label></div>
+                                    <div class="lang-buttons"><label class="lang-button from"><img src="../assets/img/flag_am.png">Հայերեն<input type="radio" class="radio-input" data-lang="am"></label><label class="lang-button middle from"><img src="../assets/img/flag_gb.png">Անգլերեն<input type="radio" class="radio-input" data-lang="en"></label><label class="lang-button from"><img src="../assets/img/flag_ru.png">Ռուսերեն<input type="radio" class="radio-input" data-lang="ru"></label></div>
                                 </div>
                                 <div class="to-language">
                                     <div>
-                                        <h5 class="field-subheading">Թիրախային լեզու&nbsp;<span>from</span></h5>
+                                        <h5 class="field-subheading">Թիրախային լեզու&nbsp;<span>to</span></h5>
                                     </div>
-                                    <div class="lang-buttons"><label class="lang-button"><img src="../assets/img/flag_am.png">Հայերեն<input type="radio" class="radio-input"></label><label class="lang-button middle"><img src="../assets/img/flag_gb.png">Անգլերեն<input type="radio" class="radio-input"></label><label class="lang-button"><img src="../assets/img/flag_ru.png">Ռուսերեն<input type="radio" class="radio-input"></label></div>
+                                    <div class="lang-buttons"><label class="lang-button target"><img src="../assets/img/flag_am.png">Հայերեն<input type="radio" class="radio-input" data-lang="am" name="toLang"></label><label class="lang-button middle target"><img src="../assets/img/flag_gb.png">Անգլերեն<input type="radio" class="radio-input" data-lang="en" name="toLang"></label><label class="lang-button target"><img src="../assets/img/flag_ru.png">Ռուսերեն<input type="radio" class="radio-input" data-lang="ru" name="toLang"></label></div>
                                 </div>
                                 <div class="translation-type">
                                     <div>
                                         <h5 class="field-subheading">Տեսակը</h5>
                                     </div>
-                                    <div class="d-flex type-buttons"><label class="type-button"><img src="../assets/img/general.svg">Սովորական<input type="radio" class="radio-input"></label><label class="type-button middle"><img src="../assets/img/scale.svg">Նոտարական<input type="radio" class="radio-input"></label><label class="type-button"><img src="../assets/img/seal.svg">Ապոստիլային<input type="radio" class="radio-input"></label></div>
+                                    <div class="d-flex type"><label class="type__button type__button-general">Սովորական<input type="radio" class="radio-input"></label><label class="type__button middle type__button-notary">Նոտարական<input type="radio" class="radio-input"></label><label class="type__button type__button-apostile">Ապոստիլային<input type="radio" class="radio-input"></label></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="origin-lang">
+                    <div class="form-block">
                         <div class="d-xl-flex justify-content-xl-center align-items-xl-center number-circle">
-                            <h1>2</h1>
+                            <h2 class="number-circle__number">2</h2>
                         </div>
-                        <div>
+                        <div style="width: 100%;">
                             <div>
-                                <div class="from-language">
-                                    <div class="lang-buttons">
+                                <div>
+                                    <div>
                                         <div class="upload-tabs">
-                                            <ul class="nav nav-tabs" role="tablist">
-                                                <li class="nav-item" role="presentation"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">Ներբեռնեք ֆայլը</a></li>
-                                                <li class="nav-item" role="presentation"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">Մուտքագրեք տեքստը</a></li>
+                                            <ul class="nav nav-tabs upload-nav-tabs" role="tablist">
+                                                <li class="nav-item upload-nav-item" role="presentation"><a class="nav-link active upload-nav-link" role="tab" data-toggle="tab" href="#tab-1">Ներբեռնեք ֆայլը</a></li>
+                                                <li class="nav-item upload-nav-item" role="presentation"><a class="nav-link upload-nav-link" role="tab" data-toggle="tab" href="#tab-2">Մուտքագրեք տեքստը</a></li>
                                             </ul>
                                             <div class="tab-content">
-                                                <div class="tab-pane active" role="tabpanel" id="tab-1"><label>Label<input class="form-control-file" type="file" multiple=""></label></div>
-                                                <div class="tab-pane" role="tabpanel" id="tab-2">
-                                                    <p>Content for tab 2.</p>
-                                                </div>
+                                                <div class="tab-pane active" role="tabpanel" id="tab-1"><label class="file-input-label">Վերբեռնեք կամ գցեք Ձեր ֆայլերը<input class="form-control-file" type="file" multiple=""></label></div>
+                                                <div class="tab-pane" role="tabpanel" id="tab-2"><textarea class="form-control text-input" placeholder="Մուտքագրեք ձեր տեսքտը այստեղ..."></textarea></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="to-language">
-                                    <div class="lang-buttons"><label>Էջերի քանակ<input class="form-control" type="number"></label></div>
-                                </div>
-                                <div class="translation-type">
-                                    <div>
-                                        <h5 class="field-subheading">Տեսակը</h5>
-                                    </div>
-                                    <div class="d-flex type-buttons"><label class="type-button"><img src="../assets/img/general.svg">Սովորական<input type="radio" class="radio-input"></label><label class="type-button middle"><img src="../assets/img/scale.svg">Նոտարական<input type="radio" class="radio-input"></label><label class="type-button"><img src="../assets/img/seal.svg">Ապոստիլային<input type="radio" class="radio-input"></label></div>
+                                <div class="pages">
+                                    <div class="d-flex lang-buttons"><label class="d-flex">Էջերի քանակ<input class="form-control pages-count" type="number"></label></div>
                                 </div>
                             </div>
                         </div>
@@ -108,6 +100,7 @@
     </main>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/buttons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="../assets/js/Simple-Slider.js"></script>
 </body>
