@@ -71,13 +71,6 @@ section {
   margin: 100px auto;
 }
 
-.radio-input {
-  position: absolute;
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
 .number-circle {
   flex: 0 0 56px;
   width: 56px;
@@ -136,9 +129,5 @@ section {
 
 .pages {
   padding: 40px;
-}
-
-label {
-  margin-bottom: 0;
 }
 

@@ -46,3 +46,17 @@ type.forEach(btn => {
     }
     );
 });
+
+const term = document.querySelectorAll('.term-buttons');
+
+term.forEach(btn => {
+    btn.addEventListener('click', () => {
+        term.forEach(btn2 => {
+            btn2.classList.remove('checked_term');
+            }
+        );
+        
+        btn.classList.add('checked_term');
+    }
+    );
+});
