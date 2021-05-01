@@ -38,7 +38,7 @@
             <div class="form-container">
                 <h1 class="form-container__heading">Պատվիրել թարգմանություն</h1>
                 <div class="form-divider"></div>
-                <form id="order-form" action="post">
+                <form id="order-form" class="order-form" action="post">
                     <div class="form-block">
                         <div class="d-xl-flex justify-content-xl-center align-items-xl-center number-circle">
                             <h2 class="number-circle__number">1</h2>
@@ -80,14 +80,14 @@
                                                 <li class="nav-item upload-nav-item" role="presentation"><a class="nav-link upload-nav-link" role="tab" data-toggle="tab" href="#tab-2">Մուտքագրեք տեքստը</a></li>
                                             </ul>
                                             <div class="tab-content">
-                                                <div class="tab-pane active" role="tabpanel" id="tab-1"><label class="file-input-label">Վերբեռնեք կամ գցեք Ձեր ֆայլերը<input class="form-control-file" type="file" multiple=""></label></div>
+                                                <div class="tab-pane active" role="tabpanel" id="tab-1"><label class="file-input-label" name="file-input-label">Վերբեռնեք կամ գցեք Ձեր ֆայլերը<input class="form-control-file" type="file" id="file-input" multiple=""></label></div>
                                                 <div class="tab-pane" role="tabpanel" id="tab-2"><textarea class="form-control text-input" placeholder="Մուտքագրեք ձեր տեսքտը այստեղ..."></textarea></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="pages">
-                                    <div class="d-flex lang-buttons"><label class="d-flex">Էջերի քանակ<input class="form-control pages-count" type="number"></label></div>
+                                    <div class="d-flex lang-buttons"><label class="d-flex align-items-xl-center pages-count">Էջերի քանակ<input class="form-control pages-count-value" type="number"></label></div>
                                 </div>
                                 <div>
                                     <div>

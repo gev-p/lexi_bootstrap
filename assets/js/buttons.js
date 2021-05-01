@@ -60,3 +60,13 @@ term.forEach(btn => {
     }
     );
 });
+
+const tabArea = document.querySelector('.upload-tabs')
+const fileInput = document.forms['order-form'].elements['file-input'];
+    fileInput.addEventListener('input', () =>{
+        let = fileName = formElements = document.forms['order-form'].elements['file-input'].value;
+        let fileBlock = document.createElement('div')
+        fileBlock.innerHTML = fileName;
+        tabArea.after(fileBlock)
+        
+    })

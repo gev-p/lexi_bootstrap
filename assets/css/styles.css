@@ -669,8 +669,9 @@ main {
   pointer-events: none;
 }
 
-.pages-count {
+.pages-count-value {
   border-radius: 28px;
+  margin-left: 10px;
 }
 
 textarea.form-control {
@@ -822,5 +823,13 @@ section {
   margin: 0;
   font-size: 18px;
   font-weight: bold;
+}
+
+.pages-count {
+  white-space: nowrap;
+}
+
+.pages {
+  padding: 40px 0;
 }
 
