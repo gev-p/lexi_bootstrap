@@ -92,7 +92,7 @@
                                     <div>
                                         <h5 class="field-subheading">Պատրաստ Լինելու Ժամկետը</h5>
                                     </div>
-                                    <div class="d-flex terms-container"><label class="term-buttons">1 օր<input type="radio" class="radio-input" name="term"></label><label class="term-buttons">2 օր</label><label class="term-buttons">3 օր<input type="radio" class="radio-input" name="term"></label><label class="term-buttons">3+ օր<input type="radio" class="radio-input" name="term"></label></div>
+                                    <div class="d-flex terms-container"><label class="term-buttons">1 օր<input type="radio" class="radio-input" name="term" value="1"></label><label class="term-buttons">2 օր<input type="radio" class="radio-input" name="term" value="2"></label><label class="term-buttons">3 օր<input type="radio" class="radio-input" name="term" value="3"></label><label class="term-buttons">3+ օր<input type="radio" class="radio-input" name="term" value="4"></label></div>
                                 </div>
                             </div>
                         </div>
@@ -107,15 +107,56 @@
                                     <div>
                                         <h5 class="field-subheading">Առաքման Հասցե</h5>
                                     </div>
-                                    <div class="d-flex form-address"><label class="form-address__label"><input class="form-control form-address__form-control" type="text" placeholder="10/1 North avenue"></label></div>
+                                    <div class="d-flex form-address"><label class="form-address__label"><input class="form-control form-control-lg form-address__form-control" type="text" placeholder="10/1 Northern Ave, Yerevan, Armenia"></label></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </form>
             </div>
-            <div class="order">
-                <h5>Պատվերի<br>Մանրամասները</h5>
+            <div class="form__checkout">
+                <div>
+                    <h5 class="form__checkout-heading">Պատվերի<br>Մանրամասները</h5>
+                </div>
+                <div class="form__order-details-container">
+                    <div class="form__order-details">
+                        <div class="form__order-desk">
+                            <p>Էջերի քանակը</p>
+                        </div>
+                        <div class="form__order-value">
+                            <p><span>6</span>&nbsp;էջ</p>
+                        </div>
+                    </div>
+                    <div class="form__order-details">
+                        <div class="form__order-desk">
+                            <p>Լեզուները</p>
+                        </div>
+                        <div class="form__order-value">
+                            <p><span>6</span>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="form__order-details">
+                        <div class="form__order-desk">
+                            <p>Տեսակը</p>
+                        </div>
+                        <div class="form__order-value">
+                            <p>սովորական</p>
+                        </div>
+                    </div>
+                    <div class="form__order-details">
+                        <div class="form__order-desk">
+                            <p>Ժամանակը</p>
+                        </div>
+                        <div class="form__order-value">
+                            <p>3+ օր</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-xl-center align-items-xl-center order-total">
+                    <p class="order-total-heading">Ընդհանուր</p>
+                    <p class="order-total-value"><span>14000</span>&nbsp;AMD</p>
+                </div>
+                <div></div>
             </div>
         </section>
     </main>

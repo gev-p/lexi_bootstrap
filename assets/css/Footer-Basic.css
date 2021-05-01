@@ -131,3 +131,11 @@ section {
   padding: 40px;
 }
 
+.order-total-heading {
+  margin: 0 20px 0 0;
+}
+
+.order-total-value {
+  margin: 0;
+}
+
