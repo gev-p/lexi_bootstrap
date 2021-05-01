@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../assets/css/Mardoto.css">
     <link rel="stylesheet" href="../assets/css/Mardoto-Regular.css">
     <link rel="stylesheet" href="../assets/css/Rondal.css">
+    <link rel="stylesheet" href="../assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="../assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="../assets/css/Navigation-Clean.css">
@@ -37,7 +38,7 @@
             <div class="form-container">
                 <h1 class="form-container__heading">Պատվիրել թարգմանություն</h1>
                 <div class="form-divider"></div>
-                <form>
+                <form id="order-form" action="post">
                     <div class="form-block">
                         <div class="d-xl-flex justify-content-xl-center align-items-xl-center number-circle">
                             <h2 class="number-circle__number">1</h2>
@@ -156,7 +157,7 @@
                     <p class="order-total-heading">Ընդհանուր</p>
                     <p class="order-total-value"><span>14000</span>&nbsp;AMD</p>
                 </div>
-                <div></div>
+                <div class="d-flex form-button-container"><button class="btn btn-primary form__submit-button" type="submit" for="order-form">Պատվիրել</button></div>
             </div>
         </section>
     </main>

@@ -749,8 +749,8 @@ label {
 }
 
 .form__checkout {
+  display: table;
   width: 360px;
-  height: 460px;
   box-shadow: 0 0 12px 0 rgba(110, 136, 142, 0.4);
   background-color: #f5f5f5;
 }
@@ -787,5 +787,40 @@ label {
 .order-total {
   padding: 24px 0;
   border-bottom: 1px solid #d9d9d9;
+  font-family: 'Mardoto';
+}
+
+.term-buttons:hover {
+  cursor: pointer;
+}
+
+.form__submit-button {
+  width: 308px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: #20b1e4;
+  font-family: Bokonique;
+  font-size: 18px;
+  letter-spacing: 0.72px;
+  color: #ffffff;
+  border: none;
+}
+
+section {
+  max-width: 1272px;
+  margin: 100px auto;
+}
+
+.order-total-heading {
+  margin: 0 20px 0 0;
+  font-size: 16px;
+  color: #686868;
+}
+
+.order-total-value {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 
