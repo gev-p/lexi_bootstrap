@@ -47,8 +47,28 @@ type.forEach(btn => {
     );
 });
 
-const term = document.querySelectorAll('.term-buttons');
+const transType = document.forms['order-form'].elements['translation-type'];
+const valueContainer = document.querySelector('.form__order-type-value')
 
+    transType.forEach(btn =>{
+        btn.addEventListener('click', () => {
+        let type = document.forms['order-form'].elements['translation-type'].value;
+        valueContainer.innerHTML = type;        
+    });
+});
+
+const tabArea = document.querySelector('.upload-tabs')
+const fileInput = document.forms['order-form'].elements['file-input'];
+    fileInput.addEventListener('input', () =>{
+        let fileName = document.forms['order-form'].elements['file-input'].value.replace('C:\\fakepath\\','');
+        let fileBlock = document.createElement('div')
+        fileBlock.innerHTML = fileName;
+        tabArea.after(fileBlock)
+        
+    })
+
+const term = document.querySelectorAll('.term-buttons');
+const termPlace = document.querySelector('.form__order-term-value');
 term.forEach(btn => {
     btn.addEventListener('click', () => {
         term.forEach(btn2 => {
@@ -57,16 +77,23 @@ term.forEach(btn => {
         );
         
         btn.classList.add('checked_term');
+        let chk = document.getElementsByName('term')
+        chk.forEach(elem =>{
+            if (elem.checked){
+                let elemValue = elem.value;
+                termPlace.innerHTML = elemValue + " օր";
+            }
+
+        })
     }
     );
 });
 
-const tabArea = document.querySelector('.upload-tabs')
-const fileInput = document.forms['order-form'].elements['file-input'];
-    fileInput.addEventListener('input', () =>{
-        let = fileName = formElements = document.forms['order-form'].elements['file-input'].value;
-        let fileBlock = document.createElement('div')
-        fileBlock.innerHTML = fileName;
-        tabArea.after(fileBlock)
-        
-    })
+
+
+const countInput = document.querySelector('.pages-count-value');
+const countPlace = document.querySelector('.form__order-count-value');
+countInput.addEventListener('input', () => {
+    let value = countInput.value;
+    countPlace.innerHTML = value + " էջ";
+    });
