@@ -34,40 +34,52 @@
         </div>
     </nav>
     <main>
-        <section class="d-flex">
+        <section class="d-flex justify-content-center flex-wrap">
             <div class="form-container">
                 <h1 class="form-container__heading">Պատվիրել թարգմանություն</h1>
                 <div class="form-divider"></div>
                 <form id="order-form" class="order-form" action="post">
                     <div class="form-block">
-                        <div class="d-xl-flex justify-content-xl-center align-items-xl-center number-circle">
+                        <div class="number-circle">
                             <h2 class="number-circle__number">1</h2>
                         </div>
-                        <div>
+                        <div style="max-width: 100%;">
                             <div>
                                 <div class="from-language">
-                                    <div>
+                                    <div class="field-subheading-container">
                                         <h5 class="field-subheading">Օրիգինալ Լեզու&nbsp;<span>from</span></h5>
                                     </div>
-                                    <div class="lang-buttons"><label class="lang-button from"><img src="../assets/img/flag_am.png">Հայերեն<input type="radio" class="radio-input" data-lang="am" name="origin"></label><label class="lang-button middle from"><img src="../assets/img/flag_gb.png">Անգլերեն<input type="radio" class="radio-input" data-lang="en" name="origin"></label><label class="lang-button from"><img src="../assets/img/flag_ru.png">Ռուսերեն<input type="radio" class="radio-input" data-lang="ru" name="origin"></label></div>
+                                    <div class="d-flex justify-content-center flex-wrap align-items-sm-center align-items-md-center lang-buttons">
+                                        <div class="col lang-button-container"><label class="col-form-label lang-button from"><img src="../assets/img/flag_am.png">Հայերեն<input type="radio" class="radio-input" data-lang="am" name="origin"></label></div>
+                                        <div class="col lang-button-container"><label class="col-form-label lang-button middle from"><img src="../assets/img/flag_gb.png">Անգլերեն<input type="radio" class="radio-input" data-lang="en" name="origin"></label></div>
+                                        <div class="col lang-button-container"><label class="col-form-label lang-button from"><img src="../assets/img/flag_ru.png">Ռուսերեն<input type="radio" class="radio-input" data-lang="ru" name="origin"></label></div>
+                                    </div>
                                 </div>
                                 <div class="to-language">
                                     <div>
                                         <h5 class="field-subheading">Թիրախային լեզու&nbsp;<span>to</span></h5>
                                     </div>
-                                    <div class="lang-buttons"><label class="lang-button target"><img src="../assets/img/flag_am.png">Հայերեն<input type="radio" class="radio-input" data-lang="am" name="toLang"></label><label class="lang-button middle target"><img src="../assets/img/flag_gb.png">Անգլերեն<input type="radio" class="radio-input" data-lang="en" name="toLang"></label><label class="lang-button target"><img src="../assets/img/flag_ru.png">Ռուսերեն<input type="radio" class="radio-input" data-lang="ru" name="toLang"></label></div>
+                                    <div class="d-flex justify-content-center flex-wrap lang-buttons">
+                                        <div class="col lang-button-container"><label class="col-form-label lang-button target"><img src="../assets/img/flag_am.png">Հայերեն<input type="radio" class="radio-input" data-lang="am" name="toLang"></label></div>
+                                        <div class="col lang-button-container"><label class="col-form-label lang-button middle target"><img src="../assets/img/flag_gb.png">Անգլերեն<input type="radio" class="radio-input" data-lang="en" name="toLang"></label></div>
+                                        <div class="col lang-button-container"><label class="col-form-label lang-button target"><img src="../assets/img/flag_ru.png">Ռուսերեն<input type="radio" class="radio-input" data-lang="ru" name="toLang"></label></div>
+                                    </div>
                                 </div>
                                 <div class="translation-type">
                                     <div>
                                         <h5 class="field-subheading">Տեսակը</h5>
                                     </div>
-                                    <div class="d-flex type"><label class="type__button type__button-general">Սովորական<input type="radio" class="radio-input" name="translation-type" value="Սովորական"></label><label class="type__button middle type__button-notary">Նոտարական<input type="radio" class="radio-input" name="translation-type" value="Նոտարական"></label><label class="type__button type__button-apostile">Ապոստիլային<input type="radio" class="radio-input" name="translation-type" value="Ապոստիլային"></label></div>
+                                    <div class="d-flex flex-wrap type">
+                                        <div class="col"><label class="col-form-label type__button type__button-general">Սովորական<input type="radio" class="radio-input" name="translation-type" value="Սովորական"></label></div>
+                                        <div class="col"><label class="col-form-label type__button middle type__button-notary">Նոտարական<input type="radio" class="radio-input" name="translation-type" value="Նոտարական"></label></div>
+                                        <div class="col"><label class="col-form-label type__button type__button-apostile">Ապոստիլային<input type="radio" class="radio-input" name="translation-type" value="Ապոստիլային"></label></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="form-block">
-                        <div class="d-xl-flex justify-content-xl-center align-items-xl-center number-circle">
+                        <div class="d-lg-flex d-xl-flex justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center number-circle">
                             <h2 class="number-circle__number">2</h2>
                         </div>
                         <div style="width: 100%;">
@@ -99,13 +111,13 @@
                         </div>
                     </div>
                     <div class="form-block">
-                        <div class="d-xl-flex justify-content-xl-center align-items-xl-center number-circle">
+                        <div class="d-lg-flex d-xl-flex justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center number-circle">
                             <h2 class="number-circle__number">3</h2>
                         </div>
                         <div style="width: 100%;">
                             <div>
                                 <div>
-                                    <div>
+                                    <div class="field-subheading-container">
                                         <h5 class="field-subheading">Առաքման Հասցե</h5>
                                     </div>
                                     <div class="d-flex form-address"><label class="form-address__label"><input class="form-control form-control-lg form-address__form-control" type="text" placeholder="10/1 Northern Ave, Yerevan, Armenia"></label></div>
@@ -153,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex justify-content-xl-center align-items-xl-center order-total">
+                <div class="d-flex justify-content-center align-items-center order-total">
                     <p class="order-total-heading">Ընդհանուր</p>
                     <p class="order-total-value"><span>14000</span>&nbsp;AMD</p>
                 </div>
