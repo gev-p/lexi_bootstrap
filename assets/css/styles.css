@@ -111,7 +111,6 @@ h2 {
   .how_steps li {
     font-family: 'Mardoto-Regular';
     font-size: 16px;
-    line-height: 30px;
     list-style: none;
     line-height: 2.2;
   }
@@ -299,6 +298,7 @@ h2 {
 .features-tab-text {
   flex: 0 0 60%;
   padding-left: 40px;
+  overflow: hidden;
 }
 
 .points_text {
@@ -575,6 +575,7 @@ main {
   font-weight: bold;
   text-align: left;
   color: #090909;
+  padding-bottom: 12px;
   margin: 0;
 }
 
@@ -600,12 +601,24 @@ main {
   background: url(../../assets/img/general.svg) center 36px no-repeat;
 }
 
+.type__button-general.checked_button {
+  background: url(../../assets/img/general_white.svg) center 36px no-repeat;
+}
+
 .type__button-notary {
   background: url(../../assets/img/scale.svg) center 36px no-repeat;
 }
 
+.type__button-notary.checked_button {
+  background: url(../../assets/img/scale_white.svg) center 36px no-repeat;
+}
+
 .type__button-apostile {
   background: url(../../assets/img/seal.svg) center 36px no-repeat;
+}
+
+.type__button-apostile.checked_button {
+  background: url(../../assets/img/seal_white.svg) center 36px no-repeat;
 }
 
 .checked_term {
@@ -649,7 +662,13 @@ main {
 
 @media (min-width: 300px) {
   .file-input-label {
-    padding: 180px 3vh 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 190px;
     background-color: #F8F8F8 !important;
     border: 2px dashed #8AA7AE;
     border-radius: 6px;
@@ -657,21 +676,17 @@ main {
     font-size: 16px;
     color: #8E8E8E;
     background: url(../../assets/img/upload_icon.svg) center 7vh no-repeat;
-    white-space: nowrap;
   }
 }
 
 @media (min-width: 576px) {
   .file-input-label {
-    padding: 113px 10vh 48px;
     background: url(../../assets/img/upload_icon.svg) center 5vh no-repeat;
   }
 }
 
 @media (min-width: 1200px) {
   .file-input-label {
-    max-width: 100%;
-    padding: 113px 204px 48px;
     background: url(../../assets/img/upload_icon.svg) center 5vh no-repeat;
   }
 }
@@ -757,9 +772,9 @@ label {
 }
 
 .form-address__form-control {
-  display: flex;
-  /*width: 670px;*/
   border-radius: 50px;
+  font-family: 'Mardoto-Regular';
+  font-size: 16px;
 }
 
 @media (min-width: 300px) {
@@ -962,24 +977,79 @@ section {
 
 @media (min-width: 300px) {
   .text-input {
-    padding: 22px 200px 140px 22px;
+    padding: 10px;
+    height: 190px;
     border-radius: 6px;
     border: solid 0.5px #8aa7ae;
     background-color: #ffffff;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .text-input {
-    padding: 22px 300px 140px 22px;
-    white-space: nowrap;
+    padding: 22px;
+  }
+}
+
+#dropFiles {
+  max-width: 100%;
+}
+
+.form-control.text-input {
+  height: 190px;
+}
+
+.form-address__label {
+  width: 100%;
+}
+
+.list-circle {
+  margin: 0 12px 6px 0;
+}
+
+@keyframes tabs {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.fp-tabs.active {
+  animation: tabs;
+  animation-duration: 0.6s;
+}
+
+.form-button-container {
+  padding: 24px 0;
+}
+
+.type-button img {
+  margin: 0 auto;
+}
+
+.middle {
+  /*margin: 0 20px;*/
+}
+
+.lang-button img {
+  margin: 0 16px 3px 0;
+}
+
+@media (min-width: 768px) {
+  .navbar-expand-md .navbar-collapse {
+    /*display: -ms-flexbox!important;*/
+    display: block!important;
+    flex-basis: auto;
   }
 }
 
 @media (min-width: 992px) {
-  .text-input {
-    padding: 34px 480px 105px 22px;
-    white-space: nowrap;
+  .navbar-expand-md .navbar-collapse {
+    /*display: -ms-flexbox!important;*/
+    display: flex!important;
+    flex-basis: auto;
   }
 }
 

@@ -57,15 +57,15 @@ const valueContainer = document.querySelector('.form__order-type-value')
     });
 });
 
-const tabArea = document.querySelector('.upload-tabs')
-const fileInput = document.forms['order-form'].elements['file-input'];
-    fileInput.addEventListener('input', () =>{
-        let fileName = document.forms['order-form'].elements['file-input'].value.replace('C:\\fakepath\\','');
-        let fileBlock = document.createElement('div')
-        fileBlock.innerHTML = fileName;
-        tabArea.after(fileBlock)
+// const tabArea = document.querySelector('.upload-tabs')
+// const fileInput = document.forms['order-form'].elements['file-input'];
+//     fileInput.addEventListener('input', () =>{
+//         let fileName = document.forms['order-form'].elements['file-input'].value.replace('C:\\fakepath\\','');
+//         let fileBlock = document.createElement('div')
+//         fileBlock.innerHTML = fileName;
+//         tabArea.after(fileBlock)
         
-    })
+//     })
 
 const term = document.querySelectorAll('.term-buttons');
 const termPlace = document.querySelector('.form__order-term-value');

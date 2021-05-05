@@ -45,7 +45,6 @@
 }
 
 .navbar {
-  max-width: 1920px;
   padding: 24px 0 20px;
   font-family: 'Mardoto';
   color: #fff;
@@ -114,10 +113,6 @@ ul {
   background-color: #fff;
 }
 
-.nav-item:last-child {
-  margin: 0px;
-}
-
 .tabs > .nav-link {
   padding: 0;
 }
@@ -145,13 +140,6 @@ ul {
 
 .features-nav-tabs .features-nav-link:focus, .features-nav-tabs .features-nav-link:hover {
   border: none;
-}
-
-.tab-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 48px;
 }
 
 .tab-image {
@@ -208,10 +196,7 @@ ul {
 
 @media (min-width: 300px) {
   .footer-nav {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 24px 0 20px;
   }
 }
 
@@ -267,6 +252,12 @@ ul {
     text-decoration: none;
     white-space: nowrap;
   }
+}
+
+.footer__navlink:hover {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
 }
 
 .footer__nav--item {
@@ -334,5 +325,52 @@ ul {
 .shadow {
   box-shadow: 0 0 20px 0 rgba(38, 82, 130, 0.6);
   border-radius: 51px;
+}
+
+.upload-tab-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.features-tab-content {
+  margin-top: 68px;
+}
+
+.login {
+  color: #fff;
+}
+
+.login-link:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-account__items {
+  margin: 0 20px;
+}
+
+.nav-account__items:last-child {
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .nav-account {
+    display: flex;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .nav-account {
+    display: flex;
+    margin-top: 0;
+  }
 }
 

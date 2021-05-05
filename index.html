@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="assets/css/Mardoto.css">
     <link rel="stylesheet" href="assets/css/Mardoto-Regular.css">
     <link rel="stylesheet" href="assets/css/Rondal.css">
-    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer-Basic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
@@ -23,13 +22,19 @@
 <body class="home">
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
         <div class="container"><a class="navbar-brand" href="#"><img class="logo__img" src="assets/img/logo.png" alt="logo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navcol-1">
-                <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse justify-content-between" id="navcol-1">
+                <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link" href="../index.html">ԳԼԽԱՎՈՐ<br></a></li>
                     <li class="nav-item"><a class="nav-link" href="order/index.html">ՊԱՏՎԻՐԵԼ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ՄԵՐ ՄԱՍԻՆ<br></a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ՀԵՏԱԴԱՐՁ ԿԱՊ<br></a></li>
                 </ul>
+                <div class="justify-content-between justify-content-sm-start justify-content-md-start nav-account">
+                    <div class="login nav-account__items"><a class="login-link" href="#">Մուտք գործել / գրանցվել</a></div>
+                    <div class="profile nav-account__items"><a href="#"><img src="assets/img/icon_user.svg"></a></div>
+                    <div class="search nav-account__items"><a href="#"><img src="assets/img/icon_search.svg"></a></div>
+                    <div class="cart nav-account__items"><a href="#"><img src="assets/img/icon_cart.svg"></a></div>
+                </div>
             </div>
         </div>
     </nav>
@@ -66,12 +71,32 @@
             <div class="col how_steps">
                 <div>
                     <h2>Ամենալավ Հավելվածը թարգմանության համար<br></h2>
-                    <ul>
-                        <li>Ընտրեք օրիգինալ լեզուն, այնուհետև թիրախային լեզուն և տեսակը</li>
-                        <li>Ներբեռնեք ֆայլը կամ եթե այն չունեք ուղարկեք նկարի տեսքով<br></li>
-                        <li>Նշեք էջերի քանակը, ընտրեք պատրաստ լինելու ժամկետը, առաքման հասցեն և zip կոդը<br></li>
-                        <li>Վերջ, պատրաստ Է:) Ստացեք թարգմանությունը և վճարեք<br></li>
-                    </ul>
+                    <div>
+                        <div class="d-flex">
+                            <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                            <div>
+                                <p>Ընտրեք օրիգինալ լեզուն, այնուհետև թիրախային լեզուն և տեսակը<br></p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                            <div>
+                                <p>Ներբեռնեք ֆայլը, կամ, եթե այն չունեք, ուղարկեք նկարի տեսքով<br></p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                            <div>
+                                <p>Նշեք էջերի քանակը, ընտրեք պատրաստ լինելու ժամկետը, առաքման հասցեն և zip կոդը<br></p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                            <div>
+                                <p>Վերջ, պատրաստ Է:) Ստացեք թարգմանությունը և վճարեք<br></p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -153,45 +178,84 @@
                         <li class="nav-item features-nav-item" role="presentation"><a class="nav-link features-nav-link" role="tab" data-toggle="tab" href="#tab-3">Գոհունակ Հաճախորդներ</a></li>
                     </ul>
                     <div class="tab-content features-tab-content">
-                        <div class="tab-pane fade show active" role="tabpanel" id="tab-1">
-                            <div class="tab-content">
+                        <div class="tab-pane active fp-tabs" role="tabpanel" id="tab-1">
+                            <div class="d-flex align-items-xl-center tab-content">
                                 <div class="tab-image"><img class="img-fluid" src="assets/img/password.png" alt="App Screen"></div>
                                 <div class="features-tab-text">
                                     <h2 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար</h2>
                                     <p><strong>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։</strong><br></p>
-                                    <ul>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong><br></li>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong></li>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong></li>
-                                    </ul>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" role="tabpanel" id="tab-2">
-                            <div class="tab-content">
+                        <div class="tab-pane fp-tabs" role="tabpanel" id="tab-2">
+                            <div class="d-flex align-items-xl-center tab-content">
                                 <div class="tab_image"><img class="img-fluid" src="assets/img/password.png"></div>
                                 <div class="features-tab-text">
                                     <h1 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար 2</h1>
                                     <p><strong>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։</strong><br></p>
-                                    <ul>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong><br></li>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong></li>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong></li>
-                                    </ul>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" role="tabpanel" id="tab-3">
-                            <div class="tab-content">
+                        <div class="tab-pane fp-tabs" role="tabpanel" id="tab-3">
+                            <div class="d-xl-flex align-items-xl-center tab-content">
                                 <div class="tab_image"><img class="img-fluid" src="assets/img/password.png"></div>
                                 <div class="features-tab-text">
                                     <h1 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար 3</h1>
                                     <p><strong>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։</strong><br></p>
-                                    <ul>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong><br></li>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong></li>
-                                        <li><strong>Լորեմ Իպսումը Տպագրության և Տպագրական</strong></li>
-                                    </ul>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
+                                        <div>
+                                            <p>Լորեմ Իպսումը Տպագրության և Տպագրական<br></p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -267,11 +331,11 @@
                 <div class="footer__logo"><img class="footer__logo" src="assets/img/logo.png" alt="Logo"></div>
                 <ul class="footer-nav">
                     <li class="footer__nav--item"><a class="footer__navlink" href="#">գլխավոր</a></li>
-                    <li class="footer__nav--item"><a class="footer__navlink" href="#">Պատվիրել</a></li>
+                    <li class="footer__nav--item"><a class="footer__navlink" href="../order/index.html">Պատվիրել</a></li>
                     <li class="footer__nav--item"><a class="footer__navlink" href="#">Մեր Մասին</a></li>
                     <li class="footer__nav--item"><a class="footer__navlink" href="#">Հետադարձ կապ</a></li>
                 </ul>
-                <div class="social_icons"><img src="assets/img/fb.svg" alt="Facebook Page Link"><img src="assets/img/twitter.svg" alt="Twitter Page Link"><img src="assets/img/instagram.svg" alt="Instagram Page Link"><img src="assets/img/linkedin.svg" alt="Linkedin Page Link"></div>
+                <div class="social_icons"><a href="https://facebook.com"><img src="assets/img/fb.svg" alt="Facebook Page Link"></a><a href="https://twitter.com"><img src="assets/img/twitter.svg" alt="Twitter Page Link"></a><a href="https://instagram.com"><img src="assets/img/instagram.svg" alt="Instagram Page Link"></a><a href="https://linkedin.com"><img src="assets/img/linkedin.svg" alt="Linkedin Page Link"></a></div>
             </div>
         </div>
         <div class="footer_divider"></div>
@@ -279,7 +343,7 @@
             <div>
                 <p>@2021 Lexi. All Rights Reserved.</p>
             </div>
-            <div><img class="vecto" src="assets/img/vecto.svg" alt="Made By Vecto"></div>
+            <div><a href="https://vecto.digital"><img class="vecto" src="assets/img/vecto.svg" alt="Made By Vecto"></a></div>
         </div>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
@@ -287,6 +351,7 @@
     <script src="assets/js/buttons.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="assets/js/Simple-Slider.js"></script>
+    <script src="assets/js/upload.js"></script>
 </body>
 
 </html>
