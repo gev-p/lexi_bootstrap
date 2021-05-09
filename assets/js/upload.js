@@ -1,48 +1,46 @@
 const tabArea = document.querySelector('.upload-tabs')
-const fileInput = document.forms['order-form'].elements['file-input'];
+const fileInput = document.querySelector('#file-input');
 fileInput.addEventListener('input', () =>{
-        for (var i = 0; i < fileInput.files.length; ++i) {
+        for (let i = 0; i < fileInput.files.length; ++i) {
         let fileName = fileInput.files.item(i).name;
         let fileBlock = document.createElement('div');
         fileBlock.innerHTML = fileName;
-        tabArea.after(fileBlock)
+        tabArea.after(fileBlock);
+        fileBlock.classList.add(`file_${i}`);
 }})
 
+const droparea = document.querySelector('.droparea');
 
-$(document).ready(function(){
-    $("#dropFiles").on('dragenter', function(ev) {
-        // Entering drop area. Highlight area
-        $("#dropFiles").addClass("highlightDropArea");
+
+    droparea.addEventListener('dragenter', (e) =>{
+        e.preventDefault();
+        console.log('dragenter');
     });
-    
-    $("#dropFiles").on('dragleave', function(ev) {
-      // Going out of drop area. Remove Highlight
-      $("#dropFiles").removeClass("highlightDropArea");
+    droparea.addEventListener('dragleave', (e) =>{
+        e.preventDefault();
+        console.log('dragleave');
     });
-    
-    $("#dropFiles").on('drop', function(ev) {
-      // Dropping files
-      ev.preventDefault();
-      ev.stopPropagation();
-      // Clear previous messages
-      $("#filenames").empty();
-      if(ev.originalEvent.dataTransfer){
-        if(ev.originalEvent.dataTransfer.files.length) {
-          var droppedFiles = ev.originalEvent.dataTransfer.files;
-          for(var i = 0; i < droppedFiles.length; i++)
-          {
-            console.log(droppedFiles[i]);
-            $("#filenames").append("<br />"+ droppedFiles[i].name);
-            // Upload droppedFiles[i] to server
-          }
+    droparea.addEventListener('dragover', (e) =>{
+        e.preventDefault();
+        console.log('dragover');
+    });
+    droparea.addEventListener('drop', (e) =>{
+        e.preventDefault();
+        console.log('drop');
+        if (e.dataTransfer.items) {
+            for (let i = 0; i < e.dataTransfer.items.length; i++) {
+              if (e.dataTransfer.items[i].kind === 'file') {
+                let file = e.dataTransfer.items[i].getAsFile();
+                let fileBlock = document.createElement('div');
+                fileBlock.innerHTML = file.name;
+                tabArea.after(fileBlock);
+                fileBlock.classList.add(`file_${i}`);
+                console.log('... file[' + i + '].name = ' + file.name);
+              }
+            }
+          } else {
+            for (let i = 0; i < e.dataTransfer.files.length; i++) {
+              console.log('... file[' + i + '].name = ' + e.dataTransfer.files[i].name);
+            }
         }
-      }
-  
-      $("#dropFiles").removeClass("highlightDropArea");
-      return false;
     });
-    
-    $("#dropFiles").on('dragover', function(ev) {
-        ev.preventDefault();
-    });
-  })
