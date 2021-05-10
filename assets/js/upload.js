@@ -1,11 +1,11 @@
-const tabArea = document.querySelector('.upload-tabs')
+const fileNames = document.querySelector('#filenames')
 const fileInput = document.querySelector('#file-input');
 fileInput.addEventListener('input', () =>{
         for (let i = 0; i < fileInput.files.length; ++i) {
         let fileName = fileInput.files.item(i).name;
         let fileBlock = document.createElement('div');
         fileBlock.innerHTML = fileName;
-        tabArea.after(fileBlock);
+        fileNames.append(fileBlock);
         fileBlock.classList.add(`file_${i}`);
 }})
 
@@ -33,7 +33,7 @@ const droparea = document.querySelector('.droparea');
                 let file = e.dataTransfer.items[i].getAsFile();
                 let fileBlock = document.createElement('div');
                 fileBlock.innerHTML = file.name;
-                tabArea.after(fileBlock);
+                fileNames.append(fileBlock);
                 fileBlock.classList.add(`file_${i}`);
                 console.log('... file[' + i + '].name = ' + file.name);
               }

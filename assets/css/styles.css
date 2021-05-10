@@ -944,7 +944,7 @@ section {
   padding: 0;
   /*border-radius: 34px;*/
   /*border: solid 1px #8aa7ae;*/
-  margin: 10px;
+  margin: 8px;
 }
 
 @media (min-width: 300px) {
@@ -1067,5 +1067,12 @@ section {
   .container, .container-lg, .container-md, .container-sm, .container-xl {
     max-width: 1272px;
   }
+}
+
+#filenames {
+  font-family: 'Mardoto-Regular';
+  font-size: 16px;
+  margin-top: 26px;
+  line-height: 1.7;
 }
 
