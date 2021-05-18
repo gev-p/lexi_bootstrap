@@ -30,6 +30,7 @@
   color: #fff;
   letter-spacing: 0.64px;
   margin: 0 20px;
+  white-space: nowrap;
 }
 
 .navigation-clean .navbar-nav > li > .dropdown-menu {
