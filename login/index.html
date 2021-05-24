@@ -22,17 +22,17 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-md navigation-clean">
-        <div class="container"><a class="navbar-brand" href="../index.html"><img class="logo__img" src="../assets/img/logo.png" alt="logo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="container"><a class="navbar-brand" href="../../index.html"><img class="logo__img" src="../assets/img/logo.png" alt="logo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-between" id="navcol-1">
                 <ul class="navbar-nav nav-menu">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">ԳԼԽԱՎՈՐ<br></a></li>
-                    <li class="nav-item"><a class="nav-link" href="order/index.html">ՊԱՏՎԻՐԵԼ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">ԳԼԽԱՎՈՐ<br></a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../order/index.html">ՊԱՏՎԻՐԵԼ</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ՄԵՐ ՄԱՍԻՆ<br></a></li>
                     <li class="nav-item"><a class="nav-link" href="#">ՀԵՏԱԴԱՐՁ ԿԱՊ<br></a></li>
                 </ul>
                 <div class="justify-content-between justify-content-sm-start justify-content-md-start nav-account">
-                    <div class="login nav-account__items"><a class="login-link" href="../login/index.html">Մուտք գործել / գրանցվել</a></div>
-                    <div class="profile nav-account__items"><a href="#"><img src="../assets/img/icon_user.svg"></a></div>
+                    <div class="login nav-account__items"><a class="login-link" href="../../login/index.html">Մուտք գործել / գրանցվել</a></div>
+                    <div class="profile nav-account__items"><a href="../profile/index.html"><img src="../assets/img/icon_user.svg"></a></div>
                     <div class="search nav-account__items"><a href="#"><img src="../assets/img/icon_search.svg"></a></div>
                     <div class="cart nav-account__items"><a href="#"><img src="../assets/img/icon_cart.svg"></a>
                         <div class="cart-count"><span>2</span></div>
@@ -42,13 +42,13 @@
         </div>
     </nav>
     <main>
-        <div class="container login-container">
+        <div class="container d-xl-flex justify-content-xl-center login-container">
             <div class="row flex-column-reverse flex-sm-column-reverse flex-md-column-reverse flex-lg-row flex-xl-row login-row">
                 <div class="col-12 col-lg-6 col-xl-6 d-xl-flex justify-content-xl-end login-img"><img class="img-fluid" src="../assets/img/login_img.png"></div>
                 <div class="col-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center align-items-center" style="padding: 0 30px;">
                     <div class="d-flex flex-column login-form">
                         <h1 class="text-center login-heading">Մուտք գործել<br></h1>
-                        <form method="post" action="/"><label class="d-block login-label">Էլ․ Հասցե<input class="form-control login-input" type="text"></label><label class="d-block login-label">Գաղտնաբառ<input class="form-control login-input" type="password"></label><a href="#">
+                        <form method="post" action="/"><label class="d-block login-label">Էլ․ Հասցե<input class="form-control login-input" type="text" required=""></label><label class="d-block login-label">Գաղտնաբառ<input class="form-control login-input" type="password" required=""></label><a href="#">
                                 <p class="text-right login-fgt">Մոռացե ՞լ եք գաղտնաբառը<br></p>
                             </a><button class="btn btn-primary d-block login-button" type="submit">Մուտք Գործել</button></form>
                     </div>

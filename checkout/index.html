@@ -42,18 +42,81 @@
         </div>
     </nav>
     <main>
-        <div class="container d-flex justify-content-xl-center align-items-xl-end login-container">
-            <div class="row flex-column-reverse flex-sm-column-reverse flex-md-column-reverse flex-lg-row flex-xl-row login-row">
-                <div class="col-12 col-lg-6 col-xl-6 d-xl-flex justify-content-xl-end login-img"><img class="img-fluid signup-image" src="../assets/img/signup.png"></div>
-                <div class="col-12 col-lg-6 col-xl-6 d-flex flex-column justify-content-center align-items-center" style="padding: 0 30px;">
-                    <div class="d-flex flex-column login-form">
-                        <h1 class="text-center signup-heading">Գրանցվել<br></h1>
-                        <form id="signup" method="post" action="/"><label class="d-block signup-label">Անուն Ազգանուն<br><input class="form-control signup-input" type="text"></label><label class="d-block signup-label">Էլ․ Հասցե<input class="form-control signup-input" type="text"></label><label class="d-block signup-label">Հեռախոսահամար<br><input class="form-control signup-input" type="tel"></label><label class="d-block signup-label">Գաղտնաբառ<input class="form-control signup-input" type="password"></label><label class="d-block signup-label">Կրկնել Գաղտնաբառը<input class="form-control signup-input" type="password"></label><a href="#"></a><button class="btn btn-primary d-block signup-button" type="submit">Պահպանել</button></form>
+        <section class="d-flex flex-wrap justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-between">
+            <div class="form-container">
+                <h1 class="form-container__heading"><strong>Անձնական Տվյալների Խմբագրում</strong><br></h1>
+                <div class="form-divider"></div>
+                <form id="personal-info" class="order-form" action="post"><label class="d-block pi-label">Անուն Ազգանուն<input class="form-control pi-input" type="text"></label><label class="d-block pi-label">Էլ․ Հասցե<input class="form-control pi-input" type="email"></label><label class="d-block pi-label">Հեռախոսահամար<input class="form-control pi-input" type="tel"></label><label class="d-block pi-label">Նշեք Առաքման Հասցեն<input class="form-control pi-input pi-address" type="text"></label></form>
+            </div>
+            <div class="form__checkout">
+                <div>
+                    <h5 class="form__checkout-heading">Պատվերի<br>Մանրամասները</h5>
+                </div>
+                <div class="form__order-details-container">
+                    <div class="form__order-details">
+                        <div class="form__order-count">
+                            <p>Էջերի քանակը</p>
+                        </div>
+                        <div class="form__order-value">
+                            <p class="form__order-count-value"></p>
+                        </div>
                     </div>
-                    <div class="d-flex"><a href="#"></a></div>
+                    <div class="form__order-details">
+                        <div class="form__order-languages">
+                            <p>Լեզուները</p>
+                        </div>
+                        <div class="form__order-value">
+                            <p>&nbsp;</p>
+                        </div>
+                    </div>
+                    <div class="form__order-details">
+                        <div class="form__order-desk">
+                            <p>Տեսակը</p>
+                        </div>
+                        <div class="form__order-value">
+                            <p class="form__order-type-value"></p>
+                        </div>
+                    </div>
+                    <div class="form__order-details">
+                        <div class="form__order-term">
+                            <p>Ժամանակը</p>
+                        </div>
+                        <div class="form__order-value">
+                            <p class="form__order-term-value"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center order-total">
+                    <p class="order-total-heading">Ընդհանուր</p>
+                    <p class="order-total-value"><span>14000</span>&nbsp;AMD</p>
+                </div>
+                <div class="d-flex form-button-container"><button class="btn btn-primary form__submit-button" type="submit" for="order-form">Պատվիրել</button></div>
+            </div>
+        </section>
+        <section class="d-block align-items-xl-end ck-app-download">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 op-app-download__col">
+                        <div class="content-container-transparent">
+                            <h1 class="op-app-download__ht">Մատչելի գներ</h1>
+                            <h1 class="d-flex justify-content-center op-app-download__ht">Որակյալ Թարգմանություն</h1>
+                            <h1 class="d-flex justify-content-end op-app-download__ht">24/7 աջակցություն</h1>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="container d-flex d-xl-flex align-items-xl-end">
+                <div class="row d-xl-flex justify-content-start">
+                    <div class="col-sm-7 col-md-7 op-app-download__col">
+                        <div class="ck-content-container">
+                            <h2 class="ck-app-download__h"><span class="op-heading-span">Lexi&nbsp;</span>՝ ՀԱՎԵԼՎԱԾԻ ԱՌԱՎԵԼՈՒԹՅՈՒՆՆԵՐԸ</h2>
+                            <p class="ck-app-download__p">Լորեմ Իպսումը Տպագրության և Տպագրական Արդյունաբերության Համար Նախատեսված Մոդելային Տեքստ Է։</p>
+                            <div class="d-flex justify-content-center justify-content-sm-start justify-content-md-start justify-content-lg-start justify-content-xl-start down_links"><a href="#"><img src="../assets/img/googleplay.png" alt="Download Android App on Google Play"></a><a href="#"><img src="../assets/img/appstore.png" alt="Download iPhone App on App Store"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="footer">
         <div class="footer-container">
