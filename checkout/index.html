@@ -21,7 +21,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" id="navbar">
         <div class="container"><a class="navbar-brand" href="../../index.html"><img class="logo__img" src="../assets/img/logo.png" alt="logo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-between" id="navcol-1">
                 <ul class="navbar-nav nav-menu">
@@ -32,10 +32,12 @@
                 </ul>
                 <div class="justify-content-between justify-content-sm-start justify-content-md-start nav-account">
                     <div class="login nav-account__items"><a class="login-link" href="../../login/index.html">Մուտք գործել / գրանցվել</a></div>
-                    <div class="profile nav-account__items"><a href="../profile/index.html"><img src="../assets/img/icon_user.svg"></a></div>
-                    <div class="search nav-account__items"><a href="#"><img src="../assets/img/icon_search.svg"></a></div>
-                    <div class="cart nav-account__items"><a href="#"><img src="../assets/img/icon_cart.svg"></a>
-                        <div class="cart-count"><span>2</span></div>
+                    <div class="d-flex align-items-xl-center nav-account__icons">
+                        <div class="profile nav-account__items"><a href="../profile/index.html"><img src="../assets/img/icon_user.svg"></a></div>
+                        <div class="search nav-account__items"><a href="#"><img src="../assets/img/icon_search.svg"></a></div>
+                        <div class="cart nav-account__items"><a href="#"><img src="../assets/img/icon_cart.svg"></a>
+                            <div class="cart-count"><span>2</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,21 +124,24 @@
             <div class="footer__upper-row">
                 <div class="footer__logo"><img class="footer__logo" src="../assets/img/logo.png" alt="Logo"></div>
                 <ul class="footer-nav">
-                    <li class="text-center footer__nav--item"><a class="footer__navlink" href="../index.html">գլխավոր</a></li>
-                    <li class="text-center footer__nav--item"><a class="footer__navlink" href="../order/index.html">Պատվիրել</a></li>
-                    <li class="text-center footer__nav--item"><a class="footer__navlink" href="#">Մեր Մասին</a></li>
-                    <li class="text-center footer__nav--item"><a class="footer__navlink" href="#">Հետադարձ կապ</a></li>
+                    <li class="footer__nav--item"><a class="footer__navlink" href="#">գլխավոր</a></li>
+                    <li class="footer__nav--item"><a class="footer__navlink" href="../order/index.html">Պատվիրել</a></li>
+                    <li class="footer__nav--item"><a class="footer__navlink" href="#">Մեր Մասին</a></li>
+                    <li class="footer__nav--item"><a class="footer__navlink" href="#">Հետադարձ կապ</a></li>
                 </ul>
                 <div class="social_icons"><a href="https://facebook.com"><img src="../assets/img/fb.svg" alt="Facebook Page Link"></a><a href="https://twitter.com"><img src="../assets/img/twitter.svg" alt="Twitter Page Link"></a><a href="https://instagram.com"><img src="../assets/img/instagram.svg" alt="Instagram Page Link"></a><a href="https://linkedin.com"><img src="../assets/img/linkedin.svg" alt="Linkedin Page Link"></a></div>
             </div>
+            <div class="footer_divider"></div>
         </div>
-        <div class="footer_divider"></div>
         <div class="footer_lower_row">
             <div>
                 <p>@2021 Lexi. All Rights Reserved.</p>
+                <div class="footer_divider-2"></div>
             </div>
             <div><a href="https://vecto.digital"><img class="vecto" src="../assets/img/vecto.svg" alt="Made By Vecto"></a></div>
-        </div>
+        </div><a href="#navbar">
+            <div class="d-flex justify-content-center align-items-center scroll-to-top"><img src="../assets/img/up_arrow.png"></div>
+        </a>
     </footer>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>

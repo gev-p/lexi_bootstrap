@@ -21,7 +21,7 @@
 </head>
 
 <body class="home">
-    <nav class="navbar navbar-light navbar-expand-md navigation-clean">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean" id="navbar">
         <div class="container"><a class="navbar-brand" href="../../index.html"><img class="logo__img" src="assets/img/logo.png" alt="logo"></a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse justify-content-between" id="navcol-1">
                 <ul class="navbar-nav nav-menu">
@@ -32,10 +32,12 @@
                 </ul>
                 <div class="justify-content-between justify-content-sm-start justify-content-md-start nav-account">
                     <div class="login nav-account__items"><a class="login-link" href="../../login/index.html">Մուտք գործել / գրանցվել</a></div>
-                    <div class="profile nav-account__items"><a href="../profile/index.html"><img src="assets/img/icon_user.svg"></a></div>
-                    <div class="search nav-account__items"><a href="#"><img src="assets/img/icon_search.svg"></a></div>
-                    <div class="cart nav-account__items"><a href="#"><img src="assets/img/icon_cart.svg"></a>
-                        <div class="cart-count"><span>2</span></div>
+                    <div class="d-flex align-items-xl-center nav-account__icons">
+                        <div class="profile nav-account__items"><a href="../profile/index.html"><img src="assets/img/icon_user.svg"></a></div>
+                        <div class="search nav-account__items"><a href="#"><img src="assets/img/icon_search.svg"></a></div>
+                        <div class="cart nav-account__items"><a href="#"><img src="assets/img/icon_cart.svg"></a>
+                            <div class="cart-count"><span>2</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -45,17 +47,41 @@
         <div class="swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <div class="slider_flex">
-                        <div class="slider_content">
+                    <div class="slider_grid">
+                        <div class="slider__heading">
                             <h2 class="slider_heading"><span>LEXI</span>&nbsp;՝ Ամենալավ Հավելվածը թարգմանության համար<br></h2><button class="btn btn-primary black_button" type="button">Պատվիրել Հիմա</button>
+                        </div>
+                        <div class="slider_content">
                             <p class="slider_content_text">Լորեմ Իպսումը Տպագրության և Տպագրական Արդյունաբերության&nbsp;<br>Համար Նախատեսված Մոդելային Տեքստ Է։<br></p>
                             <div class="down_links" style="display: flex;"><a href="#"><img src="assets/img/googleplay.png" alt="Download Android App on Google Play"></a><a href="#"><img src="assets/img/appstore.png" alt="Download iPhone App on App Store"></a></div>
                         </div>
-                        <div class="slider_image"><img src="assets/img/slider_1.png" alt="App screen"></div>
+                        <div class="slider_image"><img class="img-fluid" src="assets/img/slider_1.png" alt="App screen"></div>
                     </div>
                 </div>
-                <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
-                <div class="swiper-slide" style="background: url(&quot;https://cdn.bootstrapstudio.io/placeholders/1400x800.png&quot;) center center / cover no-repeat;"></div>
+                <div class="swiper-slide">
+                    <div class="slider_grid">
+                        <div class="slider__heading">
+                            <h2 class="slider_heading"><span>LEXI</span>&nbsp;՝ Ամենալավ Հավելվածը թարգմանության համար<br></h2><button class="btn btn-primary black_button" type="button">Պատվիրել Հիմա</button>
+                        </div>
+                        <div class="slider_content">
+                            <p class="slider_content_text">Լորեմ Իպսումը Տպագրության և Տպագրական Արդյունաբերության&nbsp;<br>Համար Նախատեսված Մոդելային Տեքստ Է։<br></p>
+                            <div class="down_links" style="display: flex;"><a href="#"><img src="assets/img/googleplay.png" alt="Download Android App on Google Play"></a><a href="#"><img src="assets/img/appstore.png" alt="Download iPhone App on App Store"></a></div>
+                        </div>
+                        <div class="slider_image"><img class="img-fluid" src="assets/img/slider_1.png" alt="App screen"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="slider_grid">
+                        <div class="slider__heading">
+                            <h2 class="slider_heading"><span>LEXI</span>&nbsp;՝ Ամենալավ Հավելվածը թարգմանության համար<br></h2><button class="btn btn-primary black_button" type="button">Պատվիրել Հիմա</button>
+                        </div>
+                        <div class="slider_content">
+                            <p class="slider_content_text">Լորեմ Իպսումը Տպագրության և Տպագրական Արդյունաբերության&nbsp;<br>Համար Նախատեսված Մոդելային Տեքստ Է։<br></p>
+                            <div class="down_links" style="display: flex;"><a href="#"><img src="assets/img/googleplay.png" alt="Download Android App on Google Play"></a><a href="#"><img src="assets/img/appstore.png" alt="Download iPhone App on App Store"></a></div>
+                        </div>
+                        <div class="slider_image"><img class="img-fluid" src="assets/img/slider_1.png" alt="App screen"></div>
+                    </div>
+                </div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -159,7 +185,7 @@
                 </div>
             </div>
             <div class="col adv-image">
-                <div class="d-flex justify-content-center"><img class="img-fluid" src="assets/img/Group375.png" alt="Supported devices"></div>
+                <div class="d-flex justify-content-center align-items-start"><img class="img-fluid" src="assets/img/Group375.png" alt="Supported devices"></div>
             </div>
         </div>
     </div>
@@ -167,7 +193,7 @@
         <div class="row">
             <div class="col-md-12">
                 <div>
-                    <h2 class="section-heading__h"><span class="section-heading__span">LEXI</span>&nbsp;Հավելվածի<br>Առանձնահատկությունները<br></h2>
+                    <h2 class="section-heading__h"><span class="section-heading__span">LEXI</span>&nbsp;Հավելվածի<br>Առանձնահատկու-թյունները<br></h2>
                 </div>
                 <p class="section-heading__p">Լորեմ Իպսումը Տպագրության և Տպագրական Արդյունաբերության Համար Նախատեսված Մոդելային Տեքստ Է։<br></p>
             </div>
@@ -182,11 +208,15 @@
                     </ul>
                     <div class="tab-content features-tab-content">
                         <div class="tab-pane active fp-tabs" role="tabpanel" id="tab-1">
-                            <div class="d-flex align-items-xl-center tab-content">
+                            <div class="tab-inner-content">
                                 <div class="tab-image"><img class="img-fluid" src="assets/img/password.png" alt="App Screen"></div>
+                                <div class="tab-heading">
+                                    <div>
+                                        <h2 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար</h2>
+                                    </div>
+                                </div>
                                 <div class="features-tab-text">
-                                    <h2 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար</h2>
-                                    <p><strong>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։</strong><br></p>
+                                    <p>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։<br></p>
                                     <div class="d-flex">
                                         <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
                                         <div>
@@ -209,11 +239,15 @@
                             </div>
                         </div>
                         <div class="tab-pane fp-tabs" role="tabpanel" id="tab-2">
-                            <div class="d-flex align-items-xl-center tab-content">
-                                <div class="tab_image"><img class="img-fluid" src="assets/img/password.png"></div>
+                            <div class="tab-inner-content">
+                                <div class="tab-image"><img class="img-fluid" src="assets/img/password.png" alt="App Screen"></div>
+                                <div class="tab-heading">
+                                    <div>
+                                        <h2 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար</h2>
+                                    </div>
+                                </div>
                                 <div class="features-tab-text">
-                                    <h1 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար 2</h1>
-                                    <p><strong>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։</strong><br></p>
+                                    <p>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։<br></p>
                                     <div class="d-flex">
                                         <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
                                         <div>
@@ -236,11 +270,15 @@
                             </div>
                         </div>
                         <div class="tab-pane fp-tabs" role="tabpanel" id="tab-3">
-                            <div class="d-xl-flex align-items-xl-center tab-content">
-                                <div class="tab_image"><img class="img-fluid" src="assets/img/password.png"></div>
+                            <div class="tab-inner-content">
+                                <div class="tab-image"><img class="img-fluid" src="assets/img/password.png" alt="App Screen"></div>
+                                <div class="tab-heading">
+                                    <div>
+                                        <h2 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար</h2>
+                                    </div>
+                                </div>
                                 <div class="features-tab-text">
-                                    <h1 class="features__content-heading">Ամենալավ Հավելվածը թարգմանության համար 3</h1>
-                                    <p><strong>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։</strong><br></p>
+                                    <p>Լորեմ իպսումը տպագրության և տպագրական արդյունաբերության համար նախատեսված մոդելային տեքստ է։<br></p>
                                     <div class="d-flex">
                                         <div><img class="list-circle" src="assets/img/Ellipse6.svg"></div>
                                         <div>
@@ -318,7 +356,7 @@
         <div class="row download">
             <div class="col-md-12 text-center">
                 <div>
-                    <h2 class="section-heading__h"><br>Ներբեռնեք&nbsp;<span class="section-heading__span">LEXI</span>&nbsp;Հավելվածը Հենց Հիմա<br></h2><button class="btn btn-primary order-button" type="button">Պատվիրել&nbsp;Հիմա<br></button>
+                    <h2 class="section-heading__h"><br>Ներբեռնեք&nbsp;<span class="section-heading__span">LEXI</span>&nbsp;<br>Հավելվածը Հենց Հիմա<br></h2><button class="btn btn-primary order-button" type="button">Պատվիրել&nbsp;Հիմա<br></button>
                     <p class="section-heading__p">Լորեմ Իպսումը Տպագրության և Տպագրական Արդյունաբերության Համար Նախատեսված Մոդելային Տեքստ Է։<br></p>
                     <div class="d-flex justify-content-center">
                         <div style="margin-right: 12px;"><a href="#"><img src="assets/img/googleplay.png" alt="Download Android App on Google Play"></a></div>
@@ -340,14 +378,17 @@
                 </ul>
                 <div class="social_icons"><a href="https://facebook.com"><img src="assets/img/fb.svg" alt="Facebook Page Link"></a><a href="https://twitter.com"><img src="assets/img/twitter.svg" alt="Twitter Page Link"></a><a href="https://instagram.com"><img src="assets/img/instagram.svg" alt="Instagram Page Link"></a><a href="https://linkedin.com"><img src="assets/img/linkedin.svg" alt="Linkedin Page Link"></a></div>
             </div>
+            <div class="footer_divider"></div>
         </div>
-        <div class="footer_divider"></div>
         <div class="footer_lower_row">
             <div>
                 <p>@2021 Lexi. All Rights Reserved.</p>
+                <div class="footer_divider-2"></div>
             </div>
             <div><a href="https://vecto.digital"><img class="vecto" src="assets/img/vecto.svg" alt="Made By Vecto"></a></div>
-        </div>
+        </div><a href="#navbar">
+            <div class="d-flex justify-content-center align-items-center scroll-to-top"><img src="assets/img/up_arrow.png"></div>
+        </a>
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

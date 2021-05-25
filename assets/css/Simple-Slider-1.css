@@ -16,12 +16,6 @@
   }
 }
 
-@media (max-width:767px) {
-  .simple-slider .swiper-slide {
-    height: 360px;
-  }
-}
-
 .simple-slider-1 .swiper-wrapper {
   margin-bottom: 40px;
 }
