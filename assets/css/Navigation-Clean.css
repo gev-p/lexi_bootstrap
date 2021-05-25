@@ -46,7 +46,7 @@
 }
 
 .navbar {
-  padding: 24px 0 20px;
+  padding: 24px 20px 20px;
   font-family: 'Mardoto';
   color: #fff;
   font-size: 16px;
@@ -370,6 +370,13 @@ ul {
 }
 
 @media (min-width: 992px) {
+  .nav-account {
+    display: flex;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
   .nav-account {
     display: flex;
     margin-top: 0;
